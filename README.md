@@ -1,0 +1,2 @@
+# pseudo-criticos
+sei n
