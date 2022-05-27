@@ -1,3 +1,3 @@
 # pseudo-criticos
-aaaaaaaaa
+sei n
 
