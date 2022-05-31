@@ -1,3 +1,2 @@
-# pseudo-criticos
-sei n
-
+# pseudo
+ pseudo local
