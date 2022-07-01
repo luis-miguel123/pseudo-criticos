@@ -1,6 +1,6 @@
 
-from operator import index
-from turtle import home
+from operator import home
+#from turtle import home
 from django.views.generic import TemplateView
 
 
