@@ -5,5 +5,5 @@ from base.views import homeView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', homeView.__base__)
+    path('home/', homeView)
 ]
