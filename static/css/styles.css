@@ -1390,6 +1390,7 @@ progress {
   .col-lg-6 {
     flex: 0 0 auto;
     width: 50%;
+    margin: auto;
   }
 
   .col-lg-7 {
@@ -1622,7 +1623,8 @@ progress {
 
   .col-xl-10 {
     flex: 0 0 auto;
-    width: 83.33333333%;
+    width: 80%;
+    margin: auto;
   }
 
   .col-xl-11 {
@@ -2157,6 +2159,12 @@ progress {
 }
 .form-label {
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  color: rgb(0, 0, 0);
+  margin: auto;
+  display: block;
+  width: 25%;
+  padding: 0.400rem;
 }
 
 .col-form-label {
@@ -2313,14 +2321,15 @@ progress {
 
 .form-control-plaintext {
   display: block;
-  width: 100%;
-  padding: 0.375rem 0;
+  width: 25%;
+  padding: 0.400rem 0;
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 2;
   color: #212529;
   background-color: transparent;
-  border: solid transparent;
+  border: red;
   border-width: 1px 0;
+  margin: auto;
 }
 .form-control-plaintext.form-control-sm, .form-control-plaintext.form-control-lg {
   padding-right: 0;
@@ -4513,7 +4522,7 @@ textarea.form-control-lg {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: rgb(222, 219, 32);
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
@@ -4544,6 +4553,7 @@ textarea.form-control-lg {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  
 }
 
 .card-title {
@@ -7643,6 +7653,7 @@ textarea.form-control-lg {
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
+  color: red;
 }
 
 .pt-0 {
