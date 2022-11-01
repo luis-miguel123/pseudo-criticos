@@ -3039,12 +3039,12 @@ textarea.form-control-lg {
 
 .btn-primary {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: #000000;
+  border-color: #000000;
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #0b5ed7;
+  background-color: #000000;
   border-color: #0a58ca;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
@@ -3493,6 +3493,7 @@ textarea.form-control-lg {
   padding: 0.5rem 1rem;
   font-size: 1.25rem;
   border-radius: 0.3rem;
+  margin: 0.2rem;
 }
 
 .btn-sm, .btn-group-sm > .btn {
@@ -7653,7 +7654,6 @@ textarea.form-control-lg {
 .py-5 {
   padding-top: 3rem !important;
   padding-bottom: 3rem !important;
-  color: red;
 }
 
 .pt-0 {

@@ -34,7 +34,7 @@
         
         <!--corpo da pagina de login -->
 
-        <section class="h-100 gradient-form" style="background-color: rgb(205, 29, 29);">
+        <section class="h-100 gradient-form" style="background-color: rgb(255, 255, 255);">
             <div class="container py-5 h-100">
               <div class="row d-flex justify-content-center align-items-center h-100">
                 <div class="col-xl-10">
@@ -48,24 +48,15 @@
                             <h4 class="mt-1 mb-5 pb-1">Bem vindo</h4>
                           </div>
           
-                          <form>                            
-          
-                            <div class="form-outline mb-4">
-                                <label class="form-label" for="form2Example11">Usuario</label>
-                                <input type="nickname" id="form2Example11" class="form-control"
-                                placeholder="nome" />                              
-                            </div>
-          
-                            <div class="form-outline mb-4">
-                                <label class="form-label" placeholder="senha" for="form2Example22">Senha</label>
-                                <input type="password" id="form2Example22" class="form-control" />                              
-                            </div>
-          
-                            <div class="text-center pt-1 mb-5 pb-1">
-                              <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="button">Log
-                                in</button>
-                              <a class="text-muted" href="#!">Esqueceu a senha?</a>
-                            </div>
+                          <form method="POST">     
+                            
+                            {% csrf_token %}
+                            
+                            {{ form.as_p }}
+                            
+                            
+                            <button class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3" type="submit">Logar</button>
+                            
           
                             <div class="d-flex align-items-center justify-content-center pb-4">
                               <p class="mb-0 me-2">Não tem usuario?</p>
