@@ -1,41 +1,33 @@
+{% extends 'base/modelo.html' %}
+
 {% load static %}
+{% load crispy_forms_tags %}
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Pseudo Criticos</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href={% static "css/styles.css" %} rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Responsive navbar-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container px-lg-5">
-                <img src="{% static "img/logo.png" %}" alt="logo" width="100px" height="60px">
-                <a class="navbar-brand" href="#!">Pseudo Criticos</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Sobre</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Contato</a></li>                        
-                    </ul>
-                </div>
-            </div>
-        </nav>
+{% block titulo %}
+<title>admin : {{ request.user }}</title>
+{% endblock %}
 
-        <h1>tem alguma coisa aq</h1>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
+{% block conteudo %}
+
+<div class="row p-lg-3">
+    <h1 class="col-md-4 mx-auto p-4 h1 text-center">Fale conosco!</h1>
+</div>
+<div class="row">
+    <p class="fs-4 text-center">
+        Encontou algum bug de baixa complexidade ou tem alguma sugestão? <br>
+        entre em contato com a nossa equipe de uma pessoa agora mesmo!
+    </p>
+</div>
+<div class="card-body">
+    <h2 class="fw-bolder p-lg-1">Formas de contato</h2>
+    <h3 class="fw-bolder p-lg-1">Telefone:</h3>
+    <li>(84) 9 9486-6322</li>
+    <h3 class="fw-bolder p-lg-1">Email:</h3>
+    <li>luis.m@escolar.ifrn.edu.br</li>
+</div>
+
+{% endblock %}
+
+{% block info %}
+
+{% endblock %}
