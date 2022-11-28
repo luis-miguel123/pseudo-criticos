@@ -1,0 +1,33 @@
+{% extends 'base/modelo.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block titulo %}
+<title>admin : {{ request.user }}</title>
+{% endblock %}
+
+{% block conteudo %}
+
+<div class="row p-lg-3">
+    <h1 class="col-md-4 mx-auto p-4 h1 text-center">Fale conosco!</h1>
+</div>
+<div class="row">
+    <p class="fs-4 text-center">
+        Encontou algum bug de baixa complexidade ou tem alguma sugestão? <br>
+        entre em contato com a nossa equipe de uma pessoa agora mesmo!
+    </p>
+</div>
+<div class="card-body">
+    <h2 class="fw-bolder p-lg-1">Formas de contato</h2>
+    <h3 class="fw-bolder p-lg-1">Telefone:</h3>
+    <li>(84) 9 9486-6322</li>
+    <h3 class="fw-bolder p-lg-1">Email:</h3>
+    <li>luis.m@escolar.ifrn.edu.br</li>
+</div>
+
+{% endblock %}
+
+{% block info %}
+
+{% endblock %}

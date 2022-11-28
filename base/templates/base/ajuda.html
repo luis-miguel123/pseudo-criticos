@@ -1,0 +1,36 @@
+{% extends 'base/modelo.html' %}
+
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block titulo %}
+<title>admin : {{ request.user }}</title>
+{% endblock %}
+
+{% block conteudo %}
+
+<div class="row">
+    <h1 class="fw-bolder text-center p-lg-3">Manual de usuario</h1>
+</div>
+<div class="row">
+    <p class="fs-4 text-center">Bem vindo ao Pseudo Criticos, nesta seção você encontrará todas as instruções de utilização para um bom proveito do [REDACTED}</p>
+    <p class="fs-4 text-center fw-bolder"> Seu acesso ao restante do conteudo foi bloqueado pelo STF, para liberação do manual de usuario você deverá realizar:</p>
+    <ul class="list-group">
+        <li class="list-group-item">100 flexões </li>
+        <li class="list-group-item">100 agachamentos</li>
+        <li class="list-group-item">100 abdominais</li>
+        <li class="list-group-item">correr 10km</li>    
+    </ul>
+    <p class="fs-5 fw-bolder">todos os dias por 1 ano</p>
+    <h3>...</h3>
+    <h5 class="fs-4 text-center">Após esse periódo de mudanças na sua vida voçê perceberá como está forte e lindo, e se sentindo grato ao adm supremo. <br>
+        Assim fazendo um pix para a conta do adm, como forma de gratidão e apoio a sua sabedoria suprema.</h5>
+    <h1 class="fs-1 fw-bolder text-center">CHAVE: 84994866322</h1>
+</div>
+
+
+{% endblock %}
+
+{% block info %}
+
+{% endblock %}

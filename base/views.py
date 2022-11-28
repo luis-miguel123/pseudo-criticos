@@ -3,29 +3,16 @@ from django.views.generic import TemplateView
 
 
 class homeView(TemplateView):
-    template_name= "index.html"
-    
+    template_name= "base/index.html"
 
-class loginView(TemplateView):
-    template_name= "login.html"
-    
-class filmesView(TemplateView):
-    template_name= "filmes.html"
-    
-class seriesView(TemplateView):
-    template_name= "series.html"
-    
-class jogosView(TemplateView):
-    template_name= "jogos.html"
-    
-class animesView(TemplateView):
-    template_name= "animes.html"
+class modeloView(TemplateView):
+    template_name = 'base/modelo.html'
     
 class sobreView(TemplateView):
-    template_name= 'sobre.html'
+    template_name= 'base/sobre.html'
     
 class contatoView(TemplateView):
-    template_name= 'contato.html'
+    template_name= 'base/contato.html'
     
 class ajudaView(TemplateView):
-    template_name= 'ajuda.html'
+    template_name= 'base/ajuda.html'
