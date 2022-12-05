@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        {% block titulo %}
+        
         <title>Pseudo Criticos</title>
-        {% endblock %}
+        
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
@@ -30,7 +30,10 @@
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'sobre' %}">Sobre</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'contato' %}">Contato</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'ajuda' %}">Ajuda</a></li>                        
+                        <li class="nav-item"><a class="nav-link" href="{% url 'ajuda' %}">Ajuda</a></li>
+                        {% if request.user.is_authenticated %}
+                            <li class="nav-item"><h2>{{ request.user }}</h2></li>
+                        {% endif %}                        
                     </ul>
                 </div>
             </div>
@@ -44,9 +47,9 @@
                 <div class="p-4 p-lg-5 bg-light rounded-3 text-center">
                     <div class="m-4 m-lg-5">
                         <h1 class="display-5 fw-bold">Seja bem vindo!</h1>
-                        <p class="fs-4">Pseudo Criticos permite que sua opniao chegue a quem realmente precisa dela, assim vc fala e vê opniao mrd de maneira mais eficiente e com uma abrangência superior!</p>
-                        <li class="btn btn-primary btn-lg"><a href="#!">crie sua conta</a></li>
-                        <li class="btn btn-primary btn-lg"><a class="a-meu" href="{% url 'login' %}">ja tem uma conta?</a></li> 
+                        <p class="fs-4">Pseudo Criticos Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+                        <li class="btn btn-primary btn-lg"><a href="{% url 'account_signup' %}">crie sua conta</a></li>
+                        <li class="btn btn-primary btn-lg"><a class="a-meu" href="{% url 'account_login' %}">ja tem uma conta?</a></li> 
                     </div>
                 </div>
             </div>
