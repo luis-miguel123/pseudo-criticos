@@ -1,7 +1,6 @@
 from .models import Filme, Avaliacao
 from django.views.generic import TemplateView
-from django.views.generic.edit import CreateView, UpdateView
-from django.contrib.auth.models import User
+from django.views.generic.edit import CreateView
 from django.urls import reverse_lazy
 from django.contrib.auth.decorators import login_required
 
@@ -12,17 +11,12 @@ class FilmeCreate(CreateView):
     template_name = "conteudo/form.html"
     success_url = reverse_lazy("home")
 
-
 class AvaliacaoCreate(CreateView):
     model = Avaliacao
-    fields = ["titulo", "critica", 'filme']
+    fields = ["titulo", "critica", 'filme', 'autor']
     template_name = "conteudo/form.html"
     success_url = reverse_lazy("home")
 
-    def form_valid(self, form):
-        self.instance.autor = self.request.user
-        url = super().form_valid(form)
-        return url
 
 class filmesView(TemplateView):
     template_name= "conteudo/filmes.html"
